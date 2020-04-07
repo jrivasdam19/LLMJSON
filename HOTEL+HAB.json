@@ -1,0 +1,506 @@
+[
+    {
+        "id": 0,
+        "nom": "Hotel Bahía Azul",
+        "estrelles": "4",
+        "ubicacion": "Palma",
+        "trabajadores": {
+            "recepcionistas": "4",
+            "camareros": "20",
+            "cocineros": "5",
+            "camarerospiso": "13",
+            "botones": "2",
+            "seguridad": "3"
+        },
+        "servicioComida": "Carta",
+        "establecimientos": {
+            "restaurante": "1",
+            "bar": "1",
+            "catering": true,
+            "minimarket": false
+        },
+        "mascotas": {
+            "gatos": "1",
+            "perros": "1"
+        },
+        "servicioLavanderia": {
+            "lavadoSeco": false,
+            "planchado": true
+        },
+        "centroSpa": {
+            "hidromasaje": false,
+            "sauna": true,
+            "bañoTurco": false,
+            "masaje": true
+        },
+        "alquilerVehiculos": {
+            "bicicletas": true,
+            "coches": false,
+            "aparcamiento": false
+        },
+        "habitaciones": [
+            {
+                "id": "123",
+                "nombre": "suite presidencial",
+                "servicios": {
+                    "cama": [
+                        "doble",
+                        "doble"
+                    ],
+                    "baño": [
+                        "ducha",
+                        "bañera",
+                        "jacuzzi"
+                    ],
+                    "wc": true,
+                    "minibar": true,
+                    "television": true,
+                    "cafetera": true,
+                    "balcon": true,
+                    "vistas": true,
+                    "aire acondicionado": true
+                },
+                "precio": {
+                    "base": 30,
+                    "moneda": "€",
+                    "impuestos": 10,
+                    "comision": 9,
+                    "tarifa": {
+                        "temporada": "alta",
+                        "incremento": 50
+                    },
+                    "agregador": [
+                        {
+                            "nombre": "verde",
+                            "comision": 5
+                        },
+                        {
+                            "nombre": "rojo",
+                            "comision": 7
+                        }
+                    ],
+                    "total": 0
+                }
+            },
+            {
+                "id": "123",
+                "nombre": "familiar",
+                "servicios": {
+                    "cama": [
+                        "doble",
+                        "individual",
+                        "individual",
+                        "individual"
+                    ],
+                    "baño": [
+                        "ducha"
+                    ],
+                    "wc": true,
+                    "minibar": false,
+                    "television": true,
+                    "cafetera": false,
+                    "balcon": true,
+                    "vistas": true,
+                    "aire acondicionado": false
+                },
+                "precio": {
+                    "base": 25,
+                    "moneda": "€",
+                    "impuestos": 10,
+                    "comision": 9,
+                    "tarifa": {
+                        "temporada": "baja",
+                        "incremento": 15
+                    },
+                    "agregador": [
+                        {
+                            "nombre": "verde",
+                            "comision": 3
+                        },
+                        {
+                            "nombre": "rojo",
+                            "comision": 8
+                        }
+                    ],
+                    "total": 0
+                }
+            },
+            {
+                "id": "123",
+                "nombre": "negocios",
+                "servicios": {
+                    "cama": [
+                        "individual",
+                        "individual"
+                    ],
+                    "baño": [
+                        "ducha"
+                    ],
+                    "wc": true,
+                    "minibar": false,
+                    "television": false,
+                    "cafetera": true,
+                    "balcon": false,
+                    "vistas": true,
+                    "aire acondicionado": false
+                },
+                "precio": {
+                    "base": 18,
+                    "moneda": "€",
+                    "impuestos": 10,
+                    "comision": 9,
+                    "tarifa": {
+                        "temporada": "alta",
+                        "incremento": 30
+                    },
+                    "agregador": [
+                        {
+                            "nombre": "verde",
+                            "comision": 5
+                        },
+                        {
+                            "nombre": "rojo",
+                            "comision": 4
+                        }
+                    ],
+                    "total": 0
+                }
+            }
+        ]
+    },
+    {
+        "id": 0,
+        "nom": "Hotel Aguas Dulces",
+        "estrelles": "2",
+        "ubicacion": "Portocolom",
+        "trabajadores": {
+            "recepcionistas": "1",
+            "camareros": "5",
+            "cocineros": "2",
+            "camarerospiso": "9",
+            "botones": "0",
+            "seguridad": "2"
+        },
+        "servicioComida": "Media pensión",
+        "establecimientos": {
+            "restaurante": null,
+            "bar": "1",
+            "catering": false,
+            "minimarket": false
+        },
+        "mascotas": null,
+        "servicioLavanderia": {
+            "lavadoSeco": false,
+            "planchado": false
+        },
+        "centroSpa": {
+            "hidromasaje": false,
+            "sauna": true,
+            "bañoTurco": true,
+            "masaje": false
+        },
+        "alquilerVehiculos": null,
+        "habitaciones": [
+            {
+                "id": "12345",
+                "nombre": "playa",
+                "servicios": {
+                    "cama": [
+                        "individual",
+                        "individual",
+                        "individual"
+                    ],
+                    "baño": [
+                        "ducha",
+                        "jacuzzi"
+                    ],
+                    "wc": true,
+                    "minibar": true,
+                    "television": false,
+                    "cafetera": false,
+                    "balcon": true,
+                    "vistas": true,
+                    "aire acondicionado": true
+                },
+                "precio": {
+                    "base": 25,
+                    "moneda": "€",
+                    "impuestos": 9,
+                    "comision": 7,
+                    "tarifa": {
+                        "temporada": "baja",
+                        "incremento": 25
+                    },
+                    "agregador": [
+                        {
+                            "nombre": "amarillo",
+                            "comision": 6
+                        },
+                        {
+                            "nombre": "verde",
+                            "comision": 7
+                        },
+                        {
+                            "nombre": "rojo",
+                            "comision": 4
+                        }
+                    ],
+                    "total": 0
+                }
+            },
+            {
+                "id": "12345",
+                "nombre": "estudio",
+                "servicios": {
+                    "cama": [
+                        "individual"
+                    ],
+                    "baño": null,
+                    "wc": true,
+                    "minibar": false,
+                    "television": false,
+                    "cafetera": false,
+                    "balcon": false,
+                    "vistas": false,
+                    "aire acondicionado": false
+                },
+                "precio": {
+                    "base": 5,
+                    "moneda": "€",
+                    "impuestos": 9,
+                    "comision": 7,
+                    "tarifa": {
+                        "temporada": "alta",
+                        "incremento": 10
+                    },
+                    "agregador": [
+                        {
+                            "nombre": "amarillo",
+                            "comision": 12
+                        },
+                        {
+                            "nombre": "verde",
+                            "comision": 11
+                        },
+                        {
+                            "nombre": "rojo",
+                            "comision": 9
+                        }
+                    ],
+                    "total": 0
+                }
+            },
+            {
+                "id": "12345",
+                "nombre": "suite nupcial",
+                "servicios": {
+                    "cama": [
+                        "doble"
+                    ],
+                    "baño": [
+                        "bañera",
+                        "jacuzzi"
+                    ],
+                    "wc": true,
+                    "minibar": true,
+                    "television": false,
+                    "cafetera": true,
+                    "balcon": false,
+                    "vistas": true,
+                    "aire acondicionado": true
+                },
+                "precio": {
+                    "base": 27,
+                    "moneda": "€",
+                    "impuestos": 9,
+                    "comision": 7,
+                    "tarifa": {
+                        "temporada": "baja",
+                        "incremento": 15
+                    },
+                    "agregador": [
+                        {
+                            "nombre": "amarillo",
+                            "comision": 5
+                        },
+                        {
+                            "nombre": "verde",
+                            "comision": 8
+                        },
+                        {
+                            "nombre": "rojo",
+                            "comision": 6
+                        }
+                    ],
+                    "total": 0
+                }
+            }
+        ]
+    },
+    {
+        "id": 0,
+        "nom": "Hotel Mar i Terra",
+        "estrelles": "5",
+        "ubicacion": "Soller",
+        "trabajadores": {
+            "recepcionistas": "4",
+            "camareros": "10",
+            "cocineros": "5",
+            "camarerospiso": "12",
+            "botones": "2",
+            "seguridad": "3"
+        },
+        "servicioComida": "Menú",
+        "establecimientos": {
+            "restaurante": "1",
+            "bar": "1",
+            "catering": false,
+            "minimarket": true
+        },
+        "mascotas": {
+            "gatos": "3",
+            "perros": null
+        },
+        "servicioLavanderia": {
+            "lavadoSeco": true,
+            "planchado": true
+        },
+        "centroSpa": {
+            "hidromasaje": false,
+            "sauna": true,
+            "bañoTurco": true,
+            "masaje": true
+        },
+        "alquilerVehiculos": {
+            "bicicletas": false,
+            "coches": true,
+            "aparcamiento": true
+        },
+        "habitaciones": [
+            {
+                "id": "1234",
+                "nombre": "verano",
+                "servicios": {
+                    "cama": [
+                        "individual"
+                    ],
+                    "baño": [
+                        "ducha",
+                        "bañera",
+                        "jacuzzi"
+                    ],
+                    "wc": true,
+                    "minibar": true,
+                    "television": true,
+                    "cafetera": true,
+                    "balcon": true,
+                    "vistas": true,
+                    "aire acondicionado": true
+                },
+                "precio": {
+                    "base": 10,
+                    "moneda": "€",
+                    "impuestos": 5,
+                    "comision": 4,
+                    "tarifa": {
+                        "temporada": "alta",
+                        "incremento": 40
+                    },
+                    "agregador": [
+                        {
+                            "nombre": "amarillo",
+                            "comision": 15
+                        },
+                        {
+                            "nombre": "verde",
+                            "comision": 16
+                        }
+                    ],
+                    "total": 0
+                }
+            },
+            {
+                "id": "1234",
+                "nombre": "otoño",
+                "servicios": {
+                    "cama": [
+                        "doble",
+                        "individual"
+                    ],
+                    "baño": [
+                        "ducha"
+                    ],
+                    "wc": true,
+                    "minibar": false,
+                    "television": false,
+                    "cafetera": false,
+                    "balcon": true,
+                    "vistas": false,
+                    "aire acondicionado": true
+                },
+                "precio": {
+                    "base": 15,
+                    "moneda": "€",
+                    "impuestos": 5,
+                    "comision": 4,
+                    "tarifa": {
+                        "temporada": "baja",
+                        "incremento": 12
+                    },
+                    "agregador": [
+                        {
+                            "nombre": "amarillo",
+                            "comision": 4
+                        },
+                        {
+                            "nombre": "verde",
+                            "comision": 5
+                        }
+                    ],
+                    "total": 0
+                }
+            },
+            {
+                "id": "1234",
+                "nombre": "invierno",
+                "servicios": {
+                    "cama": [
+                        "doble"
+                    ],
+                    "baño": [
+                        "bañera",
+                        "jacuzzi"
+                    ],
+                    "wc": true,
+                    "minibar": false,
+                    "television": false,
+                    "cafetera": true,
+                    "balcon": true,
+                    "vistas": true,
+                    "aire acondicionado": false
+                },
+                "precio": {
+                    "base": 20,
+                    "moneda": "€",
+                    "impuestos": 5,
+                    "comision": 4,
+                    "tarifa": {
+                        "temporada": "baja",
+                        "incremento": 20
+                    },
+                    "agregador": [
+                        {
+                            "nombre": "amarillo",
+                            "comision": 3
+                        },
+                        {
+                            "nombre": "verde",
+                            "comision": 6
+                        }
+                    ],
+                    "total": 0
+                }
+            }
+        ]
+    }
+]

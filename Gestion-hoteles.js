@@ -473,7 +473,7 @@ function comprobarBares(objHotel) {
     }
 }
 
-function comprobarPerro() {
+function comprobarPerro(objHotel) {
     if (objHotel.mascotas.perros == null) {
         limpiarPerro();
     } else {
@@ -483,7 +483,7 @@ function comprobarPerro() {
     }
 }
 
-function comprobarGato() {
+function comprobarGato(objHotel) {
     if (objHotel.mascotas.gatos == null) {
         limpiarGato();
     } else {
@@ -499,8 +499,8 @@ function comprobarMascotas(objHotel) {
     } else {
         document.getElementById("mascotas").checked = true;
         controlMascotas();
-        comprobarPerro();
-        comprobarGato();
+        comprobarPerro(objHotel);
+        comprobarGato(objHotel);
     }
 }
 
