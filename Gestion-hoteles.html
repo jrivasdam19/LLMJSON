@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!------------------HEAD------------------->
+
+  <head>
+    <title>Gestión de hoteles</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="Gestion-hoteles.js"></script>
+  </head>
+
+<!-------------------BODY------------------>
+
+  <body>
+    <header></header>
+    <nav></nav>
+    <aside>
+      <blockquote>Lista de Hoteles</blockquote>
+      <ul id="llistaHotels"></ul>
+    </aside>
+    <section>
+      <h3>Los datos con * son obligatorios.</h3>
+      <input type="hidden" id="idHotel" value="" />
+      <div class="elementHotel">
+        <label>Nombre*:</label>
+        <input type="text" id="nomHotel" />
+      </div>
+      <div class="elementHotel">
+        <label>Estrellas*:</label>
+        <input type="number" id="estrellesHotel" value="0" min="1" max="5" />
+      </div>
+      <div class="elementHotel">
+        <label>Ubicación*:</label>
+        <input type="text" id="ubicacion" value="" />
+      </div>
+      <div class="elementHotel">
+        <label>Indicar número de trabajadores.</label>
+        <input
+          type="checkbox"
+          id="trabajadores"
+          onclick="controlTrabajadores()"
+        />
+        <div id="dvTrabajadores">
+          <label>Recepcionistas:</label>
+          <input type="number" id="recepcionistas" value="0" /><br />
+          <label>Camareros:</label>
+          <input type="number" id="camareros" value="0" /><br />
+          <label>Cocineros:</label>
+          <input type="number" id="cocineros" value="0" /><br />
+          <label>Camareros de piso:</label>
+          <input type="number" id="camarerosPiso" value="0" /><br />
+          <label>Botones:</label>
+          <input type="number" id="botones" value="0" /><br />
+          <label>Personal de seguridad:</label>
+          <input type="number" id="seguridad" value="0" /><br />
+        </div>
+      </div>
+      <div class="elementHotel">
+        <label>Servicio de comidas</label>
+        <input type="checkbox" id="servicioComida" onclick="controlComidas()" />
+        <div id="dvComidas">
+          <label for="mediaPension">Media pensión</label>
+          <input
+            class="comidas"
+            type="radio"
+            id="mediaPension"
+            name="comidas"
+            value="Media pensión"
+          /><br />
+          <label for="menu">Menú</label>
+          <input
+            class="comidas"
+            type="radio"
+            id="menu"
+            name="comidas"
+            value="Menú"
+          /><br />
+          <label for="carta">A la carta</label>
+          <input
+            class="comidas"
+            type="radio"
+            id="carta"
+            name="comidas"
+            value="Carta"
+          /><br />
+        </div>
+        <div class="elementHotel">
+          <label>Establecimientos de comidas y bebidas.</label>
+          <input
+            type="checkbox"
+            id="establecimientos"
+            onclick="controlEstablecimientos()"
+          />
+          <div id="dvEstablecimientos">
+            <label for="restaurante">Restaurantes</label>
+            <input
+              type="checkbox"
+              class="establecimiento"
+              id="restaurante"
+              onclick="controlNumeroRestaurantes()"
+            />
+            <div id="dvRestaurantes">
+              <label for="numeroRestaurantes">Número de restaurantes</label>
+              <input type="number" id="numeroRestaurantes" value="1" min="1" />
+            </div>
+            <br />
+            <label for="bar">Bares</label>
+            <input
+              type="checkbox"
+              class="establecimiento"
+              id="bar"
+              onclick="controlNumeroBares()"
+            />
+            <div id="dvBares">
+              <label for="numeroBares">Número de bares</label>
+              <input type="number" id="numeroBares" value="1" min="1" />
+            </div>
+            <br />
+            <label for="catering">Servicio de Catering</label>
+            <input
+              type="checkbox"
+              class="establecimiento"
+              id="catering"
+            /><br />
+            <label for="minimarket">Minimarket</label>
+            <input
+              type="checkbox"
+              class="establecimiento"
+              id="minimarket"
+            /><br />
+          </div>
+        </div>
+      </div>
+      <div class="elementHotel">
+        <label>Mascotas:</label>
+        <input type="checkbox" id="mascotas" onclick="controlMascotas()" />
+        <div id="dvMascotas">
+          <label>Indica el animal de compañía y el número.</label><br />
+          <label for="perro">Perro</label>
+          <input
+            type="checkbox"
+            id="perro"
+            class="animal"
+            onclick="controlPerro()"
+          /><br />
+          <div id="dvPerro">
+            <label for="numeroPerros">Indica el número de perros.</label>
+            <input
+              type="number"
+              id="numeroPerros"
+              value="1"
+              min="1"
+              max="3"
+            /><br />
+          </div>
+          <label for="gato">Gato</label>
+          <input
+            type="checkbox"
+            id="gato"
+            class="animal"
+            onclick="controlGato()"
+          /><br />
+          <div id="dvGato">
+            <label for="numeroGatos">Indica el número de gatos.</label>
+            <input
+              type="number"
+              id="numeroGatos"
+              value="1"
+              min="1"
+              max="3"
+            /><br />
+          </div>
+        </div>
+      </div>
+      <div class="elementHotel">
+        <label>Servicio de lavandería.</label>
+        <input type="checkbox" id="lavanderia" onclick="controlLavanderia()" />
+        <div id="dvLavanderia">
+          <label for="lavadoSeco">Limpieza en seco.</label>
+          <input type="checkbox" id="lavadoSeco" /><br />
+          <label for="planchado">Planchado</label>
+          <input type="checkbox" id="planchado" /><br />
+        </div>
+      </div>
+      <div class="elementHotel">
+        <label>Spa</label>
+        <input type="checkbox" id="spa" onclick="controlSpa()" />
+        <div id="dvSpa">
+          <label for="hidromasaje">Hidromasaje.</label>
+          <input type="checkbox" id="hidromasaje" /><br />
+          <label for="sauna">Sauna.</label>
+          <input type="checkbox" id="sauna" /><br />
+          <label for="bañoTurco">Baño Turco.</label>
+          <input type="checkbox" id="bañoTurco" /><br />
+          <label for="masaje">Masaje Tailandés.</label>
+          <input type="checkbox" id="masaje" /><br />
+        </div>
+      </div>
+      <div class="elementHotel">
+        <label>Alquiler de vehículos</label>
+        <input
+          type="checkbox"
+          id="vehiculos"
+          onclick="controlVehiculos()"
+        /><br />
+        <div id="dvVehiculos">
+          <label for="bicicletas">Bicicletas</label>
+          <input type="checkbox" id="bicicletas" class="alquiler"/><br />
+          <label for="coches">Coches</label>
+          <input type="checkbox" id="coches" class="alquiler"/><br />
+          <label for="aparcamiento">Aparcamiento.</label>
+          <input type="checkbox" id="aparcamiento" class="alquiler"/>
+        </div>
+      </div>
+      <div>
+        <button id="afegir" onclick="afegirHotel()">Añadir</button>
+        <button id="modificar" onclick="desarModificacioHotel()">
+          Guardar
+        </button>
+        <button id="generaJson" onclick="generarJsonHotels()">
+          Generar Json
+        </button>
+      </div>
+      <div>
+        <textarea id="JsonText" rows="4" cols="50"></textarea>
+      </div>
+    </section>
+    <footer>
+      <p>Práctica de gestión de hoteles por Jose Rivas</p>
+    </footer>
+  </body>
+</html>
