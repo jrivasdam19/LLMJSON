@@ -144,35 +144,21 @@ header {
 #body {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
 }
 
-#body aside section {
-  width: 100%;
-}
-
-aside {
+#body > div {
+  margin: 10px;
+  padding: 20px;
   border-radius: 4px;
   border: 5px solid grey;
   background-color: honeydew;
-  /*padding: 10px;
-  margin-left: 10px;
-  float: left;
-  width: 25%;
-  height: 90%;*/
 }
 
-section {
-  border-radius: 4px;
-  border: 5px solid grey;
-  background-color: honeydew;
-  padding: 10px;
-  /*margin-left: 10px;
-  float: left;
-  width: 65%;
-  height: auto;*/
+#body div blockquote {
+  margin-bottom: 10px;
 }
+
 
 div textarea {
   display: block;
@@ -189,8 +175,6 @@ footer {
 button {
   margin-left: 10px;
 }
-
-
 
 #modificar {
   display: none;
