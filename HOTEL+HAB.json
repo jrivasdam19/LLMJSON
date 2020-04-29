@@ -169,7 +169,7 @@
         ]
     },
     {
-        "id": 0,
+        "id": 1,
         "nom": "Hotel Aguas Dulces",
         "estrelles": "2",
         "ubicacion": "Portocolom",
@@ -338,7 +338,7 @@
         ]
     },
     {
-        "id": 0,
+        "id": 2,
         "nom": "Hotel Mar i Terra",
         "estrelles": "5",
         "ubicacion": "Soller",
