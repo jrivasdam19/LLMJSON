@@ -1,6 +1,6 @@
 [
     {
-        "id": 0,
+        "id": 1,
         "nom": "Hotel Bahía Azul",
         "estrelles": "4",
         "ubicacion": "Palma",
@@ -40,17 +40,13 @@
         },
         "habitaciones": [
             {
-                "id": "123",
+                "id": 11,
                 "nombre": "suite presidencial",
+                "valoracion": 8,
                 "servicios": {
                     "cama": [
                         "doble",
                         "doble"
-                    ],
-                    "baño": [
-                        "ducha",
-                        "bañera",
-                        "jacuzzi"
                     ],
                     "wc": true,
                     "minibar": true,
@@ -60,40 +56,43 @@
                     "vistas": true,
                     "aire acondicionado": true
                 },
-                "precio": {
-                    "base": 30,
-                    "moneda": "€",
-                    "impuestos": 10,
-                    "comision": 9,
-                    "tarifa": {
+                "precio": [
+                    {
+                        "agregador": "verde",
                         "temporada": "alta",
-                        "incremento": 50
+                        "moneda": "€",
+                        "valorNeto": 70,
+                        "impuestos": 16,
+                        "comision": 28
                     },
-                    "agregador": [
-                        {
-                            "nombre": "verde",
-                            "comision": 5
-                        },
-                        {
-                            "nombre": "rojo",
-                            "comision": 7
-                        }
-                    ],
-                    "total": 0
-                }
+                    {
+                        "agregador": "rojo",
+                        "temporada": "baja",
+                        "moneda": "€",
+                        "valorNeto": 40,
+                        "impuestos": 16,
+                        "comision": 25
+                    },
+                    {
+                        "agregador": "amarillo",
+                        "temporada": "alta",
+                        "moneda": "€",
+                        "valorNeto": 85,
+                        "impuestos": 16,
+                        "comision": 30
+                    }
+                ]
             },
             {
-                "id": "123",
+                "id": 12,
                 "nombre": "familiar",
+                "valoracion": 4,
                 "servicios": {
                     "cama": [
                         "doble",
                         "individual",
                         "individual",
                         "individual"
-                    ],
-                    "baño": [
-                        "ducha"
                     ],
                     "wc": true,
                     "minibar": false,
@@ -103,38 +102,41 @@
                     "vistas": true,
                     "aire acondicionado": false
                 },
-                "precio": {
-                    "base": 25,
-                    "moneda": "€",
-                    "impuestos": 10,
-                    "comision": 9,
-                    "tarifa": {
+                "precio": [
+                    {
+                        "agregador": "verde",
                         "temporada": "baja",
-                        "incremento": 15
+                        "moneda": "€",
+                        "valorNeto": 25,
+                        "impuestos": 16,
+                        "comision": 10
                     },
-                    "agregador": [
-                        {
-                            "nombre": "verde",
-                            "comision": 3
-                        },
-                        {
-                            "nombre": "rojo",
-                            "comision": 8
-                        }
-                    ],
-                    "total": 0
-                }
+                    {
+                        "agregador": "rojo",
+                        "temporada": "alta",
+                        "moneda": "€",
+                        "valorNeto": 35,
+                        "impuestos": 16,
+                        "comision": 30
+                    },
+                    {
+                        "agregador": "amarillo",
+                        "temporada": "baja",
+                        "moneda": "€",
+                        "valorNeto": 20,
+                        "impuestos": 16,
+                        "comision": 15
+                    }
+                ]
             },
             {
-                "id": "123",
+                "id": 13,
                 "nombre": "negocios",
+                "valoracion": 6,
                 "servicios": {
                     "cama": [
                         "individual",
                         "individual"
-                    ],
-                    "baño": [
-                        "ducha"
                     ],
                     "wc": true,
                     "minibar": false,
@@ -144,32 +146,37 @@
                     "vistas": true,
                     "aire acondicionado": false
                 },
-                "precio": {
-                    "base": 18,
-                    "moneda": "€",
-                    "impuestos": 10,
-                    "comision": 9,
-                    "tarifa": {
-                        "temporada": "alta",
-                        "incremento": 30
+                "precio": [
+                    {
+                        "agregador": "verde",
+                        "temporada": "baja",
+                        "moneda": "€",
+                        "valorNeto": 34,
+                        "impuestos": 16,
+                        "comision": 12
                     },
-                    "agregador": [
-                        {
-                            "nombre": "verde",
-                            "comision": 5
-                        },
-                        {
-                            "nombre": "rojo",
-                            "comision": 4
-                        }
-                    ],
-                    "total": 0
-                }
+                    {
+                        "agregador": "rojo",
+                        "temporada": "alta",
+                        "moneda": "€",
+                        "valorNeto": 56,
+                        "impuestos": 16,
+                        "comision": 20
+                    },
+                    {
+                        "agregador": "amarillo",
+                        "temporada": "baja",
+                        "moneda": "€",
+                        "valorNeto": 30,
+                        "impuestos": 16,
+                        "comision": 15
+                    }
+                ]
             }
         ]
     },
     {
-        "id": 1,
+        "id": 2,
         "nom": "Hotel Aguas Dulces",
         "estrelles": "2",
         "ubicacion": "Portocolom",
@@ -202,17 +209,14 @@
         "alquilerVehiculos": null,
         "habitaciones": [
             {
-                "id": "12345",
+                "id": 21,
                 "nombre": "playa",
+                "valoracion": 3,
                 "servicios": {
                     "cama": [
                         "individual",
                         "individual",
                         "individual"
-                    ],
-                    "baño": [
-                        "ducha",
-                        "jacuzzi"
                     ],
                     "wc": true,
                     "minibar": true,
@@ -222,40 +226,41 @@
                     "vistas": true,
                     "aire acondicionado": true
                 },
-                "precio": {
-                    "base": 25,
-                    "moneda": "€",
-                    "impuestos": 9,
-                    "comision": 7,
-                    "tarifa": {
-                        "temporada": "baja",
-                        "incremento": 25
+                "precio": [
+                    {
+                        "agregador": "verde",
+                        "temporada": "alta",
+                        "moneda": "€",
+                        "valorNeto": 47,
+                        "impuestos": 16,
+                        "comision": 32
                     },
-                    "agregador": [
-                        {
-                            "nombre": "amarillo",
-                            "comision": 6
-                        },
-                        {
-                            "nombre": "verde",
-                            "comision": 7
-                        },
-                        {
-                            "nombre": "rojo",
-                            "comision": 4
-                        }
-                    ],
-                    "total": 0
-                }
+                    {
+                        "agregador": "rojo",
+                        "temporada": "alta",
+                        "moneda": "€",
+                        "valorNeto": 52,
+                        "impuestos": 16,
+                        "comision": 26
+                    },
+                    {
+                        "agregador": "amarillo",
+                        "temporada": "baja",
+                        "moneda": "€",
+                        "valorNeto": 21,
+                        "impuestos": 16,
+                        "comision": 19
+                    }
+                ]
             },
             {
-                "id": "12345",
+                "id": 22,
                 "nombre": "estudio",
+                "valoracion": 5,
                 "servicios": {
                     "cama": [
                         "individual"
                     ],
-                    "baño": null,
                     "wc": true,
                     "minibar": false,
                     "television": false,
@@ -264,42 +269,40 @@
                     "vistas": false,
                     "aire acondicionado": false
                 },
-                "precio": {
-                    "base": 5,
-                    "moneda": "€",
-                    "impuestos": 9,
-                    "comision": 7,
-                    "tarifa": {
+                "precio": [
+                    {
+                        "agregador": "verde",
                         "temporada": "alta",
-                        "incremento": 10
+                        "moneda": "€",
+                        "valorNeto": 33,
+                        "impuestos": 16,
+                        "comision": 18
                     },
-                    "agregador": [
-                        {
-                            "nombre": "amarillo",
-                            "comision": 12
-                        },
-                        {
-                            "nombre": "verde",
-                            "comision": 11
-                        },
-                        {
-                            "nombre": "rojo",
-                            "comision": 9
-                        }
-                    ],
-                    "total": 0
-                }
+                    {
+                        "agregador": "rojo",
+                        "temporada": "baja",
+                        "moneda": "€",
+                        "valorNeto": 28,
+                        "impuestos": 16,
+                        "comision": 15
+                    },
+                    {
+                        "agregador": "amarillo",
+                        "temporada": "baja",
+                        "moneda": "€",
+                        "valorNeto": 25,
+                        "impuestos": 16,
+                        "comision": 10
+                    }
+                ]
             },
             {
-                "id": "12345",
+                "id": 23,
                 "nombre": "suite nupcial",
+                "valoracion": 7,
                 "servicios": {
                     "cama": [
                         "doble"
-                    ],
-                    "baño": [
-                        "bañera",
-                        "jacuzzi"
                     ],
                     "wc": true,
                     "minibar": true,
@@ -309,36 +312,37 @@
                     "vistas": true,
                     "aire acondicionado": true
                 },
-                "precio": {
-                    "base": 27,
-                    "moneda": "€",
-                    "impuestos": 9,
-                    "comision": 7,
-                    "tarifa": {
+                "precio": [
+                    {
+                        "agregador": "verde",
                         "temporada": "baja",
-                        "incremento": 15
+                        "moneda": "€",
+                        "valorNeto": 77,
+                        "impuestos": 16,
+                        "comision": 50
                     },
-                    "agregador": [
-                        {
-                            "nombre": "amarillo",
-                            "comision": 5
-                        },
-                        {
-                            "nombre": "verde",
-                            "comision": 8
-                        },
-                        {
-                            "nombre": "rojo",
-                            "comision": 6
-                        }
-                    ],
-                    "total": 0
-                }
+                    {
+                        "agregador": "rojo",
+                        "temporada": "alta",
+                        "moneda": "€",
+                        "valorNeto": 120,
+                        "impuestos": 16,
+                        "comision": 85
+                    },
+                    {
+                        "agregador": "amarillo",
+                        "temporada": "alta",
+                        "moneda": "€",
+                        "valorNeto": 135,
+                        "impuestos": 16,
+                        "comision": 70
+                    }
+                ]
             }
         ]
     },
     {
-        "id": 2,
+        "id": 3,
         "nom": "Hotel Mar i Terra",
         "estrelles": "5",
         "ubicacion": "Soller",
@@ -378,16 +382,12 @@
         },
         "habitaciones": [
             {
-                "id": "1234",
+                "id": 31,
                 "nombre": "verano",
+                "valoracion": 4,
                 "servicios": {
                     "cama": [
                         "individual"
-                    ],
-                    "baño": [
-                        "ducha",
-                        "bañera",
-                        "jacuzzi"
                     ],
                     "wc": true,
                     "minibar": true,
@@ -397,38 +397,41 @@
                     "vistas": true,
                     "aire acondicionado": true
                 },
-                "precio": {
-                    "base": 10,
-                    "moneda": "€",
-                    "impuestos": 5,
-                    "comision": 4,
-                    "tarifa": {
+                "precio": [
+                    {
+                        "agregador": "verde",
                         "temporada": "alta",
-                        "incremento": 40
+                        "moneda": "€",
+                        "valorNeto": 67,
+                        "impuestos": 16,
+                        "comision": 33
                     },
-                    "agregador": [
-                        {
-                            "nombre": "amarillo",
-                            "comision": 15
-                        },
-                        {
-                            "nombre": "verde",
-                            "comision": 16
-                        }
-                    ],
-                    "total": 0
-                }
+                    {
+                        "agregador": "rojo",
+                        "temporada": "alta",
+                        "moneda": "€",
+                        "valorNeto": 58,
+                        "impuestos": 16,
+                        "comision": 40
+                    },
+                    {
+                        "agregador": "amarillo",
+                        "temporada": "alta",
+                        "moneda": "€",
+                        "valorNeto": 70,
+                        "impuestos": 16,
+                        "comision": 39
+                    }
+                ]
             },
             {
-                "id": "1234",
+                "id": 32,
                 "nombre": "otoño",
+                "valoracion": 9,
                 "servicios": {
                     "cama": [
                         "doble",
                         "individual"
-                    ],
-                    "baño": [
-                        "ducha"
                     ],
                     "wc": true,
                     "minibar": false,
@@ -438,38 +441,40 @@
                     "vistas": false,
                     "aire acondicionado": true
                 },
-                "precio": {
-                    "base": 15,
-                    "moneda": "€",
-                    "impuestos": 5,
-                    "comision": 4,
-                    "tarifa": {
+                "precio": [
+                    {
+                        "agregador": "verde",
                         "temporada": "baja",
-                        "incremento": 12
+                        "moneda": "€",
+                        "valorNeto": 26,
+                        "impuestos": 16,
+                        "comision": 19
                     },
-                    "agregador": [
-                        {
-                            "nombre": "amarillo",
-                            "comision": 4
-                        },
-                        {
-                            "nombre": "verde",
-                            "comision": 5
-                        }
-                    ],
-                    "total": 0
-                }
+                    {
+                        "agregador": "rojo",
+                        "temporada": "alta",
+                        "moneda": "€",
+                        "valorNeto": 38,
+                        "impuestos": 16,
+                        "comision": 20
+                    },
+                    {
+                        "agregador": "amarillo",
+                        "temporada": "baja",
+                        "moneda": "€",
+                        "valorNeto": 25,
+                        "impuestos": 16,
+                        "comision": 18
+                    }
+                ]
             },
             {
-                "id": "1234",
+                "id": 33,
                 "nombre": "invierno",
+                "valoracion": 4,
                 "servicios": {
                     "cama": [
                         "doble"
-                    ],
-                    "baño": [
-                        "bañera",
-                        "jacuzzi"
                     ],
                     "wc": true,
                     "minibar": false,
@@ -479,27 +484,32 @@
                     "vistas": true,
                     "aire acondicionado": false
                 },
-                "precio": {
-                    "base": 20,
-                    "moneda": "€",
-                    "impuestos": 5,
-                    "comision": 4,
-                    "tarifa": {
+                "precio": [
+                    {
+                        "agregador": "verde",
                         "temporada": "baja",
-                        "incremento": 20
+                        "moneda": "€",
+                        "valorNeto": 30,
+                        "impuestos": 16,
+                        "comision": 10
                     },
-                    "agregador": [
-                        {
-                            "nombre": "amarillo",
-                            "comision": 3
-                        },
-                        {
-                            "nombre": "verde",
-                            "comision": 6
-                        }
-                    ],
-                    "total": 0
-                }
+                    {
+                        "agregador": "rojo",
+                        "temporada": "baja",
+                        "moneda": "€",
+                        "valorNeto": 35,
+                        "impuestos": 16,
+                        "comision": 12
+                    },
+                    {
+                        "agregador": "amarillo",
+                        "temporada": "baja",
+                        "moneda": "€",
+                        "valorNeto": 38,
+                        "impuestos": 16,
+                        "comision": 18
+                    }
+                ]
             }
         ]
     }
