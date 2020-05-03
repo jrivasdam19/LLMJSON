@@ -1,0 +1,236 @@
+@charset "uft-8";
+/* Documento CSS */
+/* Reset de estilos */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Aquí empieza el formato del HTML */
+
+#footer {
+  border: 1px black solid;
+}
+
+#header {
+  background-color: #5fb5e9;
+}
+
+#nav {
+  background-color: #187cb1;
+  font-weight: bold;
+  color: white;
+}
+
+section,
+#secciones,
+#baños,
+#comodidades {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#secciones > div {
+  margin-left: 30px;
+  margin-bottom: 5px;
+}
+
+#botonBuscar{
+    text-align: center;
+}
+#temporada{
+    align-content: center;
+}
+#secciones > div > div {
+  padding-left: 20px;
+}
+
+#baños > div {
+  margin-left: 5px;
+}
+
+#asideIzq {
+  flex-grow: 2;
+  border-right: 1px gray solid;
+}
+
+#comidas, #servicios{
+  padding: 15px 0px 15px 15px;
+}
+
+#comidas li, #servicios li {
+  padding-top: 10px;
+}
+
+#servicios{
+  border-top: 1px gray solid;
+}
+
+.tituloFiltro{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#resultado {
+  flex-grow: 6;
+  background-color: #8fc2c2;
+}
+
+.imgMiniHab {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.habitacion {
+  margin: 5px 10px 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  height: 250px;
+  width: auto;
+  background-color: white;
+  border: 1px gray solid;
+
+}
+
+.habitacion > div{
+  border-left: 1px gray solid;
+
+}
+
+.imagenHab{
+  flex-grow: 2;
+}
+
+.infoHab, .precioHab{
+  padding: 30px;
+  flex-grow: 1;
+}
+
+
+#asideDch {
+  flex-grow: 2;
+  text-align: center;
+  padding-top: 20px;
+  border-left: 1px gray solid;
+}

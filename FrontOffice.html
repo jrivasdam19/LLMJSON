@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1-transitional.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>FrontOffice</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/FrontOffice.css" />
+    <script src="FrontOffice.js"></script>
+</head>
+
+<body onload="init();">
+    <form id="dispo" action="cotitzacio.html" method="get">
+        <input name="parJson" id="parJson" value="" />
+    </form>
+    <header id="header"><img src="img/logocorte.jpg" /></header>
+    <nav id="nav">
+        <div id="temporada">
+            <label>Temporada:</label>
+            <label for="baja">Baja</label><input type="radio" class="temporada" name="temporada" id="baja" value="baja" />
+            <label for="alta">Alta</label><input type="radio" class="temporada" name="temporada" id="alta" value="alta" />
+        </div>
+        <div id="secciones">
+            <div id="camas">
+                <fieldset>
+                    <legend>Camas:</legend>
+                    <ul>
+                        <li>
+                            <input type="number" id="individual" class="camas" min="0" max="3" value="0"/><label
+                                for="individual">Individual</label>
+                        </li>
+                        <li>
+                            <input type="number" id="doble" class="camas" min="0" max="2" value="0"/><label for="doble">Doble</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+            <div id="valoraciones">
+                <p>Valoración:</p><br>
+                <div>
+                    <select id="valoracion">
+                        <option value="selecciona" selected>Selecciona una</option>
+                        <option value="excelente">Excelente</option>
+                        <option value="bueno">Bueno</option>
+                        <option value="aceptable">Aceptable</option>
+                    </select>
+                </div>
+            </div>
+            <div id="comodidades">
+                <p>Comodidades <br>en habitación:</p>
+                <div>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="climatizacion" class="filtroComodidades" value="climatizacion" /><label for="climatizacion">Climatización</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="minibar" class="filtroComodidades" value="minibar" /><label for="minibar">Minibar</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="tv" class="filtroComodidades" value="tv" /><label for="tv">TV</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="cafetera" class="filtroComodidades" value="cafetera" /><label
+                                for="cafetera">Cafetera</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="balcon" class="filtroComodidades" value="balcon" /><label for="balcon">Balcón</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="vistas" class="filtroComodidades" value="vistas" /><label for="vistas">Vistas</label>
+                        </li>
+                    </ul>
+                </div>
+                <div id="botonBuscar">
+                    <button id="buscar" type="button" onclick="realizarBusqueda();">Buscar</button>
+                </div>
+            </div>
+    </nav>
+    <section id="section">
+        <aside id="asideIzq">
+            <div id="comidas">
+                <label class="tituloFiltro">Servicio de comidas:</label>
+                <ul>
+                    <li>
+                        <input class="comidas" type="radio" id="mediaPension" name="comidas" value="Media pensión"
+                            onclick="aplicarFiltros();" /><label for="mediaPension">Media pensión</label>
+                    </li>
+                    <li>
+                        <input class="comidas" type="radio" id="menu" name="comidas" value="Menú"
+                            onclick="aplicarFiltros();" /><label for="menu">Menú</label></li>
+                    <li>
+                        <input class="comidas" type="radio" id="carta" name="comidas" value="Carta"
+                            onclick="aplicarFiltros();" /><label for="carta">A la carta</label></li>
+                </ul>
+            </div>
+            <div id="servicios">
+                <label class="tituloFiltro">Servicios: </label>
+                <ul>
+                    <li><input type="checkbox" class="filtroCheckbox" id="restaurante" value="restaurante"
+                            onclick="aplicarFiltros();" /><label for="restaurante">Restaurante
+                        </label></li>
+                    <li><input type="checkbox" class="filtroCheckbox" id="bar" value="bar"
+                            onclick="aplicarFiltros();" /><label for="bar">Bar
+                        </label></li>
+                    <li><input type="checkbox" class="filtroCheckbox" id="catering" value="catering"
+                            onclick="aplicarFiltros();" /><label for="catering">Servicio de catering
+                        </label></li>
+                    <li><input type="checkbox" class="filtroCheckbox" id="minimarket" value="minimarket"
+                            onclick="aplicarFiltros();" /><label for="minimarket">Minimarket
+                        </label></li>
+                    <li><input type="checkbox" class="filtroCheckbox" id="mascotas" value="mascotas"
+                            onclick="aplicarFiltros();" /><label for="mascotas">Mascotas
+                        </label></li>
+                    <li><input type="checkbox" class="filtroCheckbox" id="alquiler" value="alquier"
+                            onclick="aplicarFiltros();" /><label for="alquier">Alquiler de vehículos
+                        </label></li>
+                </ul>
+            </div>
+        </aside>
+        <div id="resultado">
+        </div>
+        <aside id="asideDch">
+            <h2>Precio total</h2>
+            <div><label id="precioValor">0</label><label id="precioMoneda">€</label></div>
+            <div>Habitaciones: <label id="numHabitaciones">0</label> </div>
+            <button id="continuar" type="button" onclick="continuar();">Continuar</button>
+        </aside>
+    </section>
+    <footer id="footer">
+        <p>pié de página</p>
+    </footer>
+</body>
+
+</html>
