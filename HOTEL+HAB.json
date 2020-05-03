@@ -52,9 +52,7 @@
                     "cafetera": true,
                     "balcon": true,
                     "vistas": true,
-                    "aire acondicionado": true,
-                    "toallas": true,
-                    "productosHigiene": true
+                    "climatizacion": true
                 },
                 "precio": [
                     {
@@ -99,9 +97,7 @@
                     "cafetera": false,
                     "balcon": true,
                     "vistas": true,
-                    "aire acondicionado": false,
-                    "toallas": true,
-                    "productosHigiene": false
+                    "climatizacion": false
                 },
                 "precio": [
                     {
@@ -144,9 +140,7 @@
                     "cafetera": true,
                     "balcon": false,
                     "vistas": true,
-                    "aire acondicionado": false,
-                    "toallas": true,
-                    "productosHigiene": false
+                    "climatizacion": false
                 },
                 "precio": [
                     {
@@ -225,9 +219,7 @@
                     "cafetera": false,
                     "balcon": true,
                     "vistas": true,
-                    "aire acondicionado": true,
-                    "toallas": true,
-                    "productosHigiene": true
+                    "climatizacion": true
                 },
                 "precio": [
                     {
@@ -269,9 +261,7 @@
                     "cafetera": false,
                     "balcon": false,
                     "vistas": false,
-                    "aire acondicionado": false,
-                    "toallas": false,
-                    "productosHigiene": false
+                    "climatizacion": false
                 },
                 "precio": [
                     {
@@ -313,9 +303,7 @@
                     "cafetera": true,
                     "balcon": false,
                     "vistas": true,
-                    "aire acondicionado": true,
-                    "toallas": true,
-                    "productosHigiene": true
+                    "climatizacion": true
                 },
                 "precio": [
                     {
@@ -399,9 +387,7 @@
                     "cafetera": true,
                     "balcon": true,
                     "vistas": true,
-                    "aire acondicionado": true,
-                    "toallas": true,
-                    "productosHigiene": false
+                    "climatizacion": true
                 },
                 "precio": [
                     {
@@ -444,9 +430,7 @@
                     "cafetera": false,
                     "balcon": true,
                     "vistas": false,
-                    "aire acondicionado": true,
-                    "toallas": false,
-                    "productosHigiene": false
+                    "climatizacion": true
                 },
                 "precio": [
                     {
@@ -488,9 +472,7 @@
                     "cafetera": true,
                     "balcon": true,
                     "vistas": true,
-                    "aire acondicionado": false,
-                    "toallas": true,
-                    "productosHigiene": false
+                    "climatizacion": false
                 },
                 "precio": [
                     {
