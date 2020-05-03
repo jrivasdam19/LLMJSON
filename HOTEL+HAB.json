@@ -42,10 +42,9 @@
             {
                 "id": 11,
                 "nombre": "suite presidencial",
-                "valoracion": "excelente",
+                "valoracion": "bueno",
                 "servicios": {
                     "cama": [
-                        "doble",
                         "doble"
                     ],
                     "minibar": true,
