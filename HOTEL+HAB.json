@@ -496,7 +496,7 @@
                 "precio": [
                     {
                         "agregador": "verde",
-                        "temporada": "baja",
+                        "temporada": "alta",
                         "moneda": "€",
                         "valorNeto": 30,
                         "impuestos": 16,
