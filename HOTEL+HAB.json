@@ -42,19 +42,20 @@
             {
                 "id": 11,
                 "nombre": "suite presidencial",
-                "valoracion": 8,
+                "valoracion": "excelente",
                 "servicios": {
                     "cama": [
                         "doble",
                         "doble"
                     ],
-                    "wc": true,
                     "minibar": true,
                     "television": true,
                     "cafetera": true,
                     "balcon": true,
                     "vistas": true,
-                    "aire acondicionado": true
+                    "aire acondicionado": true,
+                    "toallas": true,
+                    "productosHigiene": true
                 },
                 "precio": [
                     {
@@ -86,7 +87,7 @@
             {
                 "id": 12,
                 "nombre": "familiar",
-                "valoracion": 4,
+                "valoracion": "bueno",
                 "servicios": {
                     "cama": [
                         "doble",
@@ -94,13 +95,14 @@
                         "individual",
                         "individual"
                     ],
-                    "wc": true,
                     "minibar": false,
                     "television": true,
                     "cafetera": false,
                     "balcon": true,
                     "vistas": true,
-                    "aire acondicionado": false
+                    "aire acondicionado": false,
+                    "toallas": true,
+                    "productosHigiene": false
                 },
                 "precio": [
                     {
@@ -132,19 +134,20 @@
             {
                 "id": 13,
                 "nombre": "negocios",
-                "valoracion": 6,
+                "valoracion": "aceptable",
                 "servicios": {
                     "cama": [
                         "individual",
                         "individual"
                     ],
-                    "wc": true,
                     "minibar": false,
                     "television": false,
                     "cafetera": true,
                     "balcon": false,
                     "vistas": true,
-                    "aire acondicionado": false
+                    "aire acondicionado": false,
+                    "toallas": true,
+                    "productosHigiene": false
                 },
                 "precio": [
                     {
@@ -211,20 +214,21 @@
             {
                 "id": 21,
                 "nombre": "playa",
-                "valoracion": 3,
+                "valoracion": "bueno",
                 "servicios": {
                     "cama": [
                         "individual",
                         "individual",
                         "individual"
                     ],
-                    "wc": true,
                     "minibar": true,
                     "television": false,
                     "cafetera": false,
                     "balcon": true,
                     "vistas": true,
-                    "aire acondicionado": true
+                    "aire acondicionado": true,
+                    "toallas": true,
+                    "productosHigiene": true
                 },
                 "precio": [
                     {
@@ -256,18 +260,19 @@
             {
                 "id": 22,
                 "nombre": "estudio",
-                "valoracion": 5,
+                "valoracion": "bueno",
                 "servicios": {
                     "cama": [
                         "individual"
                     ],
-                    "wc": true,
                     "minibar": false,
                     "television": false,
                     "cafetera": false,
                     "balcon": false,
                     "vistas": false,
-                    "aire acondicionado": false
+                    "aire acondicionado": false,
+                    "toallas": false,
+                    "productosHigiene": false
                 },
                 "precio": [
                     {
@@ -299,18 +304,19 @@
             {
                 "id": 23,
                 "nombre": "suite nupcial",
-                "valoracion": 7,
+                "valoracion": "excelente",
                 "servicios": {
                     "cama": [
                         "doble"
                     ],
-                    "wc": true,
                     "minibar": true,
                     "television": false,
                     "cafetera": true,
                     "balcon": false,
                     "vistas": true,
-                    "aire acondicionado": true
+                    "aire acondicionado": true,
+                    "toallas": true,
+                    "productosHigiene": true
                 },
                 "precio": [
                     {
@@ -384,18 +390,19 @@
             {
                 "id": 31,
                 "nombre": "verano",
-                "valoracion": 4,
+                "valoracion": "aceptable",
                 "servicios": {
                     "cama": [
                         "individual"
                     ],
-                    "wc": true,
                     "minibar": true,
                     "television": true,
                     "cafetera": true,
                     "balcon": true,
                     "vistas": true,
-                    "aire acondicionado": true
+                    "aire acondicionado": true,
+                    "toallas": true,
+                    "productosHigiene": false
                 },
                 "precio": [
                     {
@@ -427,19 +434,20 @@
             {
                 "id": 32,
                 "nombre": "otoño",
-                "valoracion": 9,
+                "valoracion": "aceptable",
                 "servicios": {
                     "cama": [
                         "doble",
                         "individual"
                     ],
-                    "wc": true,
                     "minibar": false,
                     "television": false,
                     "cafetera": false,
                     "balcon": true,
                     "vistas": false,
-                    "aire acondicionado": true
+                    "aire acondicionado": true,
+                    "toallas": false,
+                    "productosHigiene": false
                 },
                 "precio": [
                     {
@@ -471,18 +479,19 @@
             {
                 "id": 33,
                 "nombre": "invierno",
-                "valoracion": 4,
+                "valoracion": "bueno",
                 "servicios": {
                     "cama": [
                         "doble"
                     ],
-                    "wc": true,
                     "minibar": false,
                     "television": false,
                     "cafetera": true,
                     "balcon": true,
                     "vistas": true,
-                    "aire acondicionado": false
+                    "aire acondicionado": false,
+                    "toallas": true,
+                    "productosHigiene": false
                 },
                 "precio": [
                     {
